@@ -37,5 +37,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     public bool canJump = true;
 }
