@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         //move player left and right
         moveVec.x = Input.GetAxis("Horizontal");
-        transform.Translate(moveVec * moveSpeed);
+        transform.Translate(moveVec * moveSpeed * Time.deltaTime);
         moveVec.Set(0, 0, 0);
 
         //jump
